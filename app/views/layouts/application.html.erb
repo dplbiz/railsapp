@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Railsapp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <header id="header">
+          <ul class="menu">
+              <li class="menu-item">
+                  <a class="menu-item-link" href="/users">Users</a>
+                  <a class="menu-item-link" href="/products">Products</a>
+              </li>
+          </ul>
+      </header>
+    <%= yield %>
+  </body>
+</html>
