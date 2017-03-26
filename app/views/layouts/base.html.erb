@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conent Management :: {{title}}</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <% if session[:current_user_username]  %>
+      <header id="header">
+          <ul class="menu">
+              <li class="menu-item">
+                  <%= link_to t('users'), users_path, class:"menu-item-link" %>
+              </li>
+            <li class="menu-item">
+              <%= link_to t('products'), products_path, class: "menu-item-link" %>
+            </li>
+          </ul>
+          <ul class="onoff">
+              <li>
+                <%= link_to t('logout'), logout_path, class:"menu-item-link" %>
+              </li>
+          </ul>
+      </header>
+      <% end %>
+    <%= yield %>
+  </body>
+</html>

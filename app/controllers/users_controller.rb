@@ -1,4 +1,5 @@
-class UsersController < ApplicationController
+class UsersController < BaseController
+  
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -14,6 +15,11 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
+    @user = User.new
+  end
+
+  # GET /users/signup
+  def signup
     @user = User.new
   end
 
