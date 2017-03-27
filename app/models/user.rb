@@ -1,4 +1,8 @@
+# Schema: User(name:string, password_digest:string)
 class User < ApplicationRecord
+	
+	# has_secure_password
+	
 	# Constants
 	STATUS_ACTIVE = 1
 	STATUS_INACTIVE = 0

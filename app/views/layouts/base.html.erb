@@ -21,7 +21,8 @@
           </ul>
           <ul class="onoff">
               <li>
-                <%= link_to t('logout'), logout_path, class:"menu-item-link" %>
+                <%= t('welcome') %> <%= session[:current_user_first_name] %>&nbsp;
+                [ <%= link_to t('logout'), logout_path, class:"menu-item-link" %> ]
               </li>
           </ul>
       </header>

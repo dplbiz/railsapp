@@ -24,3 +24,35 @@ ul {
 li {
   display: inline-block;
 }
+
+.login {
+  width: 500px;
+  height: 270px;
+  border: 1px solid #000000;
+  background: #e7a61a;
+  -webkit-box-shadow: 9px 9px 5px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 9px 5px -5px rgba(0,0,0,0.75);
+  box-shadow: 9px 9px 5px -5px rgba(0,0,0,0.75);
+  border-radius: 5px;
+  padding: 30px;
+  margin: 0 auto;
+  label ~ input[type="email"], label ~ input[type="password"] {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid #e5e5e5;
+  }
+
+  label {
+    margin-top: 10px;
+  }
+
+  label ~ input[type="submit"] {
+    width: 110px;
+    height: 30px;
+    margin-top: 10px;
+  }
+}

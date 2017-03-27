@@ -25,6 +25,7 @@ vi:
   products: "Sản phẩm"
   product: "Sản phẩm"
   login: "Đăng nhập"
+  logout: "Đăng xuất"
   show: "Hiển thị"
   edit: "Chỉnh sửa"
   update: "Cập nhật"
@@ -42,3 +43,4 @@ vi:
   updated_by: "Cập nhật bởi"
   updated_at: "Cập nhật lúc"
   sign_up_now: "Đăng ký ngay bây giờ!"
+  welcome: "Chào mừng"
